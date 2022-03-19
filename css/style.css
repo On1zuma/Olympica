@@ -1,0 +1,203 @@
+
+
+    html{
+        scroll-behavior:smooth; /*   QUAND on appui sur un lien maintenant le scrolling n'est pas instantané  */
+        overflow-x: hidden;   /* pour qu'il n'y ait pas de scoll de gauche à droite */
+        overflow-y: hidden;
+     
+  } 
+
+  .imagefond img{
+      margin-top: -2px;
+      width : 100%;
+      height : 100%;
+      text-align: center;      
+  }
+
+
+          
+header{
+    
+    display:flex;/* On aligne nos titre  */
+    flex-direction: column;/* On met l'allignement dans le sens qu'on veut ici en colone  */
+    align-items: center; /* on centre les elements  */
+  background: url('../image/340298-Apex-Legends-Video-Game-Season-7-Map-Olympus.jpg');   /* on met en background notre image rangee dans notre dossier*/
+  /*   background: url('../image/draw2.jpg'); */
+    background-size: cover;
+    background-attachment: fixed;
+    color: aliceblue;
+    padding-bottom: 20cm;
+    background-attachment: fixed;
+}
+
+/* travail sur titre h1 */
+header h1{
+    font-family:'Playfair Display', sans-serif;/* changement de police */ 
+    font-size: 50px; /* On augmente la taille de h1 */
+    text-align: center ;/* Texte maintenant aligne au format mobile aussi */
+    background-color: rgba(26, 25, 25, 0.603); /* couleur transparente du background */
+    
+}
+/* travail sur titre h4 */
+header h4{
+    margin-top: -20px; /* on réduit l'ecart entre h1 et h4 */
+    font-family:'Playfair Display', sans-serif;/* changement de police */ 
+    font-size: 20px;
+    text-align: center ;/* Texte maintenant aligne au format mobile aussi necessaire POUR EVITER LES DECALAGES */
+    border-bottom: 1px solid aliceblue ;/* ajout d'une ligne pour le style */
+    background-color: rgba(26, 25, 25, 0.432);/* couleur transparente du background */
+
+    
+}
+header link1 a{/* travail sur le BOUTON HEADER au format a*/
+    text-decoration: none;  /* on retire le soulignement   */
+    padding: 10px 20px;/* ajout marge interieur de 10px haut et bas et 20px interieur droite et gauche  */
+    background-color: rgba(41, 41, 41, 0.603); /* couleur du background du bouton */
+    color:#ffffff;/* couleur texte */
+    border: none; /* on retire l'encadrement */
+    font-size: 20px; /* on grossit le texte bouton */
+    font-family:'Playfair Display', sans-serif;/* changement de police */ 
+    outline: rgb(37, 37, 37);  /* quand on click de bouton petite couleure spawn */ 
+    cursor: pointer;/* ajout apparition pointer quand on passe la souris sur le bouton */ 
+}
+
+header link1 a:hover{/* travail sur le BOUTON HEADER au format a*/
+    text-decoration: none;  /* on retire le soulignement   */
+    padding: 10px 20px;/* ajout marge interieur de 10px haut et bas et 20px interieur droite et gauche  */
+    background-color: rgba(43, 43, 43, 0.123); /* couleur du background du bouton */
+    color:rgb(255, 255, 255);/* couleur texte */
+    border: none; /* on retire l'encadrement */
+    font-size: 20px; /* on grossit le texte bouton */
+    font-family:'Playfair Display', sans-serif;/* changement de police */ 
+    outline: rgb(37, 37, 37);  /* quand on click de bouton petite couleure spawn */ 
+    cursor: pointer;/* ajout apparition pointer quand on passe la souris sur le bouton */ 
+}
+
+header .lieninfo a{
+    text-decoration: none;  /* on retire le soulignement   */
+    color: #ffffff;
+ 
+}
+
+header .lieninfo a:hover{
+    text-decoration: none;  /* on retire le soulignement   */
+    color: #ffffff8c;
+}
+
+ p.background{
+   
+     padding-bottom:1000px;
+     background: url('../image/340298-Apex-Legends-Video-Game-Season-7-Map-Olympus.jpg');
+     transform: rotate(180deg);
+    /* -webkit-filter: grayscale(100%);  Pour les navigateurs Chrome, Safari, Opera */
+   /* filter: grayscale(100%);  Firefox */ 
+   
+ }          
+
+ 
+/* EFFET ECRITURE */
+ .typewriter-container {
+     
+    display: flex;
+    justify-content: flex-start;
+  
+    margin-bottom:10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top:200px;
+}
+.typewriter p {
+    background-color: rgba(41, 41, 41, 0.603);  /* couleur transparente du background */
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 45px;
+    font-weight: lighter;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    animation: typing 4.5s steps(24);
+}
+.typewriter p::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 1px;
+    background: #dadada;
+    right: 0;
+    top: 0;
+    animation: cursor 1s infinite;
+}
+
+@keyframes typing {
+    from {width:0}
+    to {width: 100%;}
+}
+
+@keyframes cursor {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* JS EFFECT */
+
+ *, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+  }
+  body {
+    background: #222;
+    text-align: center;
+    
+  }
+  
+  h1 {
+      
+    font-family: Open sans;
+    font-weight: 400;
+    font-size: 150px;
+    color: #f1f1f1;
+    display: inline-block;
+    margin-top: 100px;
+    position: relative;
+  }
+  h1::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 3px;
+    background: #000000;
+    right: -15px;
+    top: 0;
+    animation: cursor 1s infinite;
+  }
+  
+  @keyframes cursor {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  } 
+
+
+  @media(max-width:1230px) { /* adaptation mobile*/
+
+    .typewriter p {
+        font-size: 31px;
+    }
+}

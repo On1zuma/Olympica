@@ -1,0 +1,49 @@
+html{
+    scroll-behavior:smooth; /*   QUAND on appui sur un lien maintenant le scrolling n'est pas instantané  */
+    overflow-x: hidden;   /* pour qu'il n'y ait pas de scoll de gauche à droite */
+    
+
+} 
+
+
+
+header{
+    display:flex;/* On aligne nos titre  */
+    flex-direction: column;/* On met l'allignement dans le sens qu'on veut ici en colone  */
+    align-items: center; /* on centre les elements  */
+  /*  background: url('../image/olymp.jpg');  on met en background notre image rangee dans notre dossier*/
+    background: url('../image/olymp.jpg'); /* on met en background notre image rangee dans notre dossier*/
+    background-size: cover;
+    padding-bottom: 7cm;
+    background-attachment: fixed;
+    
+}	
+
+header .container{
+    margin-top: 3cm;
+    padding-bottom: 5cm;
+    color: aliceblue;
+    background: rgba(0, 0, 0, 0.534);
+    
+}	
+
+
+header .container h1{
+    color: aliceblue;
+    font-size: 80px; /* On augmente la taille de h1 */
+    
+    
+}	
+
+header .container a{
+    color: aliceblue;
+    
+    
+    
+}	
+header .container a:hover{
+    color: rgba(240, 248, 255, 0.479);
+    
+    
+    
+}	
